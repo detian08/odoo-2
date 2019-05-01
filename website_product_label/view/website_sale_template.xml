@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+	<template id="website_product_label.assets_frontend" 
+			name="website_product_label_assets_frontend" 
+			inherit_id="website.assets_frontend">
+		<xpath expr="." position="inside">	
+	        <link rel="stylesheet"
+	        	href="/website_product_label/static/src/scss/product_label.scss"/>			       
+	    </xpath>
+	</template>
+
+	<template id="products_item" 
+		inherit_id="website_sale.products_item" >
+		<xpath expr="//div[@class='ribbon-wrapper']" position="after">
+ 		 <t t-if ="product.label.id">
+				 <div id="label_postion" t-att-class="product.label.position ">	  		
+			    	 <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product.label, 'img')"
+		                       t-att-style="product.label_style()" />
+      		</div>
+  		</t>
+		</xpath>
+	</template>
+
+	<template id="product" inherit_id="website_sale.product" >
+	<xpath expr="//div[@class='col-md-6']" position="inside">
+	 	<t t-if="product.label.id">
+		 	<div id="label_postion" 
+			 		t-att-class="product.label.sudo().position ">	
+		    	 <img 
+		    	 	class="img img-responsive" 
+		    	 	t-att-src="website.image_url(product.label, 'img')"
+	               t-att-style="product.sudo().label_style()" />
+		     						       
+			</div>
+		</t>
+	</xpath>
+	</template>
+</odoo>     

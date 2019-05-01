@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_view"
+        model="ir.ui.view">
+       <field name="name">product.template.product.label</field>
+       <field name="model">product.template</field>
+       <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <group name="email_template_and_project"  position="before">
+                <group string='Website Label'>
+                    <group string='Website Label'>
+                        <field name="label"/>
+                        <field name="img" widget="image"  />
+                        <center>
+                            <button type="object"
+                                    class="oe_highlight"
+                                    string="Pre-View"
+                                    name="PreView"
+                                    style="margin-left:10% !important"/>
+                        </center>
+                    </group>
+                    <group>
+                    </group>
+                </group>
+            </group>
+        </field>
+   </record>
+
+    <record model="ir.ui.view" id="website_product_label.list_view">
+            <field name="name">product.label.tree.view</field>
+            <field name="model">product.label</field>
+            <field name="type">tree</field>
+            <field name="arch"  type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="position"/>
+                    <field name="height"/>
+                    <field name="width"/>
+                    <field name="margintop"/>
+                    <field name="marginright"/>
+                    <field name="marginbottom"/>
+                    <field name="marginleft"/>
+                </tree>
+            </field>
+    </record>
+
+    <record model="ir.ui.view" id="website_product_label.form_view">
+            <field name="name">product.label.form.view</field>
+            <field name="model">product.label</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                            <separator string="Make Custom Label"/><newline/>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="name"/>
+                                    <field name="name"/>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="img"/>
+                                    <field name="img" widget="image" class="oe_left oe_avatar" />
+                                </div>
+                            </div>
+                            <separator string=""/>
+                        <group>
+                            <group>
+                                 <div style="font-weight: bold;font-size: 20px;margin: 15px 0px 10px;color: #7C7BAD;">Set Dimension</div><br/>
+                                    <field name="height" autofocus='1'/>
+                                    <field name="width"/>
+                                    <field name="position"/>
+                            </group>
+                            <group>
+                                 <div style="font-weight: bold;font-size: 20px;margin: 15px 0px 10px;color: #7C7BAD;">Customize Position</div><br/>
+                                    <field name="margintop"/>
+                                    <field name="marginright"/>
+                                    <field name="marginbottom"/>
+                                    <field name="marginleft"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+    </record>
+
+     <record id="website_product_label.kanban_view" model="ir.ui.view">
+        <field name="name">product.label.kanban.view</field>
+        <field name="model">product.label</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="img"/>
+                <field name="name"/>
+                <field name="position"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_tags_section">
+                                <field name="name" />
+                            </div>
+                            <div class="o_kanban_image">
+                                <img t-att-src="kanban_image('product.label', 'img', record.id.raw_value)" alt="Product Label"/>
+                            </div>
+                            <div class="oe_kanban_details">
+                                <strong>
+                                    <a type="open"><field name="name"/>
+                                </a>
+                                </strong>
+                                <div name="tags"/>
+                                <ul>
+                                    <li>Position: <field name="position"></field></li>
+                                    <li>Height: <field name="height"></field></li>
+                                    <li>Width: <field name="width"></field></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="website_product_label.action_product_label">
+        <field name="name">Product Label Configuration</field>
+        <field name="res_model">product.label</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">kanban,form,tree</field>
+        <field name="view_id" ref="website_product_label.kanban_view"/>
+
+    </record>
+    <menuitem
+        action="website_product_label.action_product_label"
+        id="website_product_label.menu_product_label"
+        parent="website_sale.menu_product_settings"
+        name="Product labels"
+        string="Product labels" />
+</odoo>

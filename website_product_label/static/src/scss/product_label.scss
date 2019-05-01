@@ -1,0 +1,63 @@
+
+.topleft ,
+.topcenter,
+.topright{
+  top:0%;
+  z-index: 6;  
+  position: absolute;
+
+}
+.topcenter {
+ left: 38%;
+ text-align: center;
+ 
+}
+.topright{
+  right: 0%;
+  text-align: right;
+
+}
+
+
+.bottomleft ,
+.bottomcenter,
+.bottomright{
+
+  bottom:0%;
+  z-index: 6;  
+  position: absolute;
+
+}
+.bottomcenter {
+  left:38%;
+  text-align: center;
+  
+}
+.bottomright{
+  text-align: right;
+  right: 0%
+
+}
+
+
+
+
+.centerleft,
+.center,
+.centerright{
+  position: absolute;
+  top: 50%;  
+  z-index: 10;
+}
+
+.center{
+  text-align: center;
+  left: 38%;
+
+}
+.centerright{
+  right: 0%;
+  text-align: right;
+}
+
+

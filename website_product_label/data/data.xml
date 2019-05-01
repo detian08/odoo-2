@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">		
+
+     
+    	<record id="sale1" model="product.label">
+            <field name="name">Sale A </field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/sale/3.png"/>
+            
+            
+
+        </record>
+        <record id="sale2" model="product.label">
+            <field name="name">Sale B </field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/sale/2.png"/>
+            
+            
+
+        </record>
+        <record id="sale3" model="product.label">
+            <field name="name">Sale C </field>
+            <field name="height">60px</field>
+            <field name="width">100px</field>
+            <field name="position">centerleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/sale/1.png"/>
+            
+            
+
+        </record>
+        <record id="sale4" model="product.label">
+            <field name="name">Sale D </field>
+            <field name="height">100px</field>
+            <field name="width">100px</field>
+            <field name="position">centerright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/sale/4.png"/>
+            
+            
+
+        </record>
+        <record id="sale5" model="product.label">
+            <field name="name">Sale E </field>
+            <field name="height">100px</field>
+            <field name="width">100px</field>
+            <field name="position">bottomright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/sale/5.png"/>
+            
+            
+
+        </record>
+        <record id="new1" model="product.label">
+            <field name="name">New A </field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/new/3.png"/>
+            
+            
+
+        </record>
+        <record id="new2" model="product.label">
+            <field name="name">New B </field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/new/2.png"/>
+            
+            
+
+        </record>
+        <record id="new3" model="product.label">
+            <field name="name">New C </field>
+            <field name="height">60px</field>
+            <field name="width">100px</field>
+            <field name="position">centerleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/new/1.png"/>
+            
+            
+
+        </record>
+        <record id="new4" model="product.label">
+            <field name="name">New D </field>
+            <field name="height">100px</field>
+            <field name="width">100px</field>
+            <field name="position">centerright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/new/4.png"/>
+            
+            
+
+        </record>
+        <record id="new5" model="product.label">
+            <field name="name">New E </field>
+            <field name="height">100px</field>
+            <field name="width">100px</field>
+            <field name="position">bottomright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/new/5.png"/>
+            
+            
+
+        </record>
+        <record id="discountA10" model="product.label">
+            <field name="name">Discount 10% A</field>
+            <field name="height">60px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/1.png"/>
+            
+            
+
+        </record>
+        <record id="discountB10" model="product.label">
+            <field name="name">Discount 10% B</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/6.png"/>
+            
+            
+
+        </record>
+        <record id="discountC10" model="product.label">
+            <field name="name">Discount 10% C</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/11.png"/>
+            
+            
+
+        </record>
+        <record id="discountA20" model="product.label">
+            <field name="name">Discount 20% A</field>
+            <field name="height">60px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/2.png"/>
+            
+            
+
+        </record>
+        <record id="discountB20" model="product.label">
+            <field name="name">Discount 20% B</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/7.png"/>
+            
+            
+
+        </record>
+        <record id="discountC20" model="product.label">
+            <field name="name">Discount 20% C</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">topright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/12.png"/>
+            
+            
+
+        </record>
+        <record id="discountA30" model="product.label">
+            <field name="name">Discount 30% A</field>
+            <field name="height">60px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/3.png"/>
+            
+            
+
+        </record>
+        <record id="discountB30" model="product.label">
+            <field name="name">Discount 30% B </field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">centerright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/8.png"/>
+            
+            
+
+        </record>
+        <record id="discountC30" model="product.label">
+            <field name="name">Discount 30% C</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">center</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/13.png"/>
+            
+            
+
+        </record>
+        <record id="discountA40" model="product.label">
+            <field name="name">Discount 40% A</field>
+            <field name="height">60px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/4.png"/>
+            
+            
+
+        </record>
+        <record id="discountB40" model="product.label">
+            <field name="name">Discount 40% B</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">bottomright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/9.png"/>
+            
+            
+
+        </record>
+        <record id="discountC40" model="product.label">
+            <field name="name">Discount 40% C</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">bottomright</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/14.png"/>
+            
+            
+
+        </record>
+        <record id="discountA50" model="product.label">
+            <field name="name">Discount 50% A</field>
+            <field name="height">60px</field>
+            <field name="width">80px</field>
+            <field name="position">topleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/5.png"/>
+            
+            
+
+        </record>
+        
+        
+        
+        
+        <record id="discountB50" model="product.label">
+            <field name="name">Discount 50% B</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">bottomleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/10.png"/>
+            
+            
+
+        </record>
+        
+       
+        <record id="discountC50" model="product.label">
+            <field name="name">Discount 50% C</field>
+            <field name="height">80px</field>
+            <field name="width">80px</field>
+            <field name="position">bottomleft</field>
+            <field name="margintop">0px</field>
+            <field name="marginright">0px</field>
+            <field name="marginbottom">0px</field>
+            <field name="marginleft">0px</field>
+            <field name="img" type="base64" file="website_product_label/static/src/img/discount/15.png"/>
+            
+            
+
+        </record>
+        
+
+    </data>
+</openerp>
