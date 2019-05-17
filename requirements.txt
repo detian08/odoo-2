@@ -1,3 +1,4 @@
 netifaces
 pyusb
 gatt
+v4l2
