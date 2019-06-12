@@ -6,8 +6,15 @@
     color:#222;
   }
 
-  .actionpad .button {
-    color:#222;
+  .actionpad{
+    background: black;
+
+    .button {
+      color:#222;
+    }
+  }
+  .numpad{
+    background: black;
   }
 
   .order-button.floor-button {
