@@ -1,4 +1,8 @@
 /* .row.content {height: 1500px} */
+    
+body.o_odoo_customer_display {
+    font-family: "Lato","Lucida Grande", Helvetica, Verdana, Arial;
+}
 
 .navbar > .container-fluid{
     display: -webkit-inline-box;
