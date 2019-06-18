@@ -319,11 +319,6 @@ label{
 }
 
 /* CAPTIVEA UPDATES ON STYLE */
-.summary.clearfix {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-}
-
 .loyalty-points {
     margin-right: 20px;
 }
@@ -336,7 +331,14 @@ label{
     border-bottom: 6px solid #00ebb5 !important;
 }
 
+.order .orderline {
+    background: #f8f9fa;
+    margin: 2px 0px;
+}
+
 .entry.total {
+    font-size: 22px;
+    color: #fff !important;
     float: right;
     margin-right: 15px;
     margin-left: 15px;
@@ -347,13 +349,14 @@ label{
     -webkit-box-shadow: -8px 8px 0px -1px #ff00c8;
     -moz-box-shadow: -8px 8px 0px -1px #ff00c8;
     box-shadow: -8px 8px 0px -1px #ff00c8;
+    
 
     .badge {
       color: white;
-      border: none;
+      border: none !important;
     }
     .value {
-      color: #0decb9;
+      color: #00ebb5 !important;
     }
     .subentry {
         color: white;
