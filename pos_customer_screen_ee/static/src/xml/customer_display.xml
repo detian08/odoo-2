@@ -3,7 +3,7 @@
 
     <t t-name="CustomerName">
         <div class="customer_name">
-            Welcome  
+<!--             Welcome   -->
             <t t-if="customer_name">
                <t t-esc="customer_name"/>
             </t>
