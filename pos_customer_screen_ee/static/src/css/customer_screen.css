@@ -319,7 +319,6 @@ label{
 }
 
 /* CAPTIVEA UPDATES ON STYLE */
-
 .summary.clearfix {
     background-color: #f8f9fa;
     padding: 20px 0;
@@ -330,38 +329,34 @@ label{
 }
 
 .navbar{
-    background-color: #222;
+    background-color: #222 !important;
     border-color: #3e3e3e;
     height: 60px;
     padding-bottom: 10px;
-    border-bottom: 6px solid #00ebb5;
+    border-bottom: 6px solid #00ebb5 !important;
 }
 
-.summary{
-  color: #fff;
+.entry.total {
+    float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+    background: black;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    -webkit-box-shadow: -8px 8px 0px -1px #ff00c8;
+    -moz-box-shadow: -8px 8px 0px -1px #ff00c8;
+    box-shadow: -8px 8px 0px -1px #ff00c8;
 
-  .total {
-      float: right;
-      margin-right: 15px;
-      margin-left: 15px;
-      background: black;
-      padding: 10px 16px;
-      border-radius: 6px;
+    .badge {
+      color: white;
       border: none;
-      -webkit-box-shadow: -8px 8px 0px -1px #ff00c8;
-      -moz-box-shadow: -8px 8px 0px -1px #ff00c8;
-      box-shadow: -8px 8px 0px -1px #ff00c8;
-
-      .badge {
+    }
+    .value {
+      color: #0decb9;
+    }
+    .subentry {
         color: white;
-        border: none;
-      }
-      .value {
-        color: #0decb9;
-      }
-      .subentry {
-          color: white;
-      }
-    }  
+    }    
+    
 }
-  
