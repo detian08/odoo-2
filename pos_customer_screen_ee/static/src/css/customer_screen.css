@@ -348,10 +348,15 @@ label{
     -moz-box-shadow: -8px 8px 0px -1px #ff00c8;
     box-shadow: -8px 8px 0px -1px #ff00c8;
 
-    span.badge {
+    .badge {
       color: white;
+      border: none;
     }
-    span.value {
+    .value {
       color: #0decb9;
     }
+    .subentry {
+        color: white;
+    }    
+    
 }
