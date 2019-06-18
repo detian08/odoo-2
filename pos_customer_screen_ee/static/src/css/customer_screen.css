@@ -348,18 +348,15 @@ label{
     border: none;
     -webkit-box-shadow: -8px 8px 0px -1px #ff00c8;
     -moz-box-shadow: -8px 8px 0px -1px #ff00c8;
-    box-shadow: -8px 8px 0px -1px #ff00c8;
-    
-
-    .badge {
-      color: white;
-      border: none !important;
-    }
-    .value {
-      color: #00ebb5 !important;
-    }
-    .subentry {
-        color: white;
-    }    
-    
+    box-shadow: -8px 8px 0px -1px #ff00c8;    
 }
+.badge {
+color: white;
+border: none !important;
+}
+.value {
+color: #00ebb5 !important;
+}
+.subentry {
+color: white;
+}   
