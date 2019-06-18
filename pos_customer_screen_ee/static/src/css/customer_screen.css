@@ -336,6 +336,16 @@ label{
     margin: 2px 0px;
 }
 
+.order .orderline .product-name {
+    color: #222;
+}
+.order .orderline .price {
+    padding: 0;
+    font-weight: bold;
+    float: right;
+    color: #222;
+}
+
 .entry.total {
     font-size: 22px;
     color: #fff !important;
@@ -348,15 +358,42 @@ label{
     border: none;
     -webkit-box-shadow: -8px 8px 0px -1px #ff00c8;
     -moz-box-shadow: -8px 8px 0px -1px #ff00c8;
-    box-shadow: -8px 8px 0px -1px #ff00c8;    
+    box-shadow: -8px 8px 0px -1px #ff00c8;  
 }
+
 .badge {
-color: white;
-border: none !important;
+  color: white;
+  border: none !important;
 }
 .value {
-color: #00ebb5 !important;
+  color: #00ebb5 !important;
 }
 .subentry {
-color: white;
-}   
+    color: white;
+}
+
+.loyalty-points {
+    padding: 8px 6px;
+    width: 76px;
+    color: #00ebb5;
+    background: #212529;
+    border-radius: 6px;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.pos-payment_info_details table.table {
+    margin-right: 15px;
+    margin-left: 15px;
+    background: black;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    -webkit-box-shadow: -8px 8px 0px -1px #00ebb5;
+    -moz-box-shadow: -8px 8px 0px -1px #00ebb5;
+    box-shadow: -5px 5px 0px -1px #00ebb5;
+    color: white;
+}
+.pos-payment_info .pos-payment_info_details {
+    margin: 20px auto !important;
+}
