@@ -10,7 +10,7 @@
     <template id="customer_assets" name="pos_customer_screen_ee assets">
         <t t-call="web.assets_backend"/>
         <script type="text/javascript" src="/pos_customer_screen_ee/static/src/js/customer_display.js"></script>
-        <link rel="stylesheet" href="/pos_customer_screen_ee/static/src/css/customer_screen.scss"/>
+        <link rel="stylesheet" href="/pos_customer_screen_ee/static/src/css/customer_screen.css"/>
         <link rel="stylesheet" type="text/css" href="/web/static/lib/fontawesome/css/font-awesome.css"/>
     </template>
 
