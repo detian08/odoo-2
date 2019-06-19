@@ -224,18 +224,18 @@ odoo.define('pos_customer_screen_ee.pos', function (require) {
         },
     });
 
-    var CustomerDisplay = screens.ActionButtonWidget.extend({
-		template : 'CustomerDisplay',
-		button_click : function() {
-			self = this;
-			window.open(self.pos.attributes.origin+'/web/customer_display' , '_blank');
-		},
-	});
-	screens.define_action_button({
-		'name' : 'CustomerDisplay',
-		'widget' : CustomerDisplay,
-		condition: function(){
-			return this.pos.config.customer_display;
-		},
-	});
+//     var CustomerDisplay = screens.ActionButtonWidget.extend({
+// 		template : 'CustomerDisplay',
+// 		button_click : function() {
+// 			self = this;
+// 			window.open(self.pos.attributes.origin+'/web/customer_display' , '_blank');
+// 		},
+// 	});
+// 	screens.define_action_button({
+// 		'name' : 'CustomerDisplay',
+// 		'widget' : CustomerDisplay,
+// 		condition: function(){
+// 			return this.pos.config.customer_display;
+// 		},
+// 	});
 });
