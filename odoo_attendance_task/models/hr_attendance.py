@@ -3,20 +3,9 @@ from odoo import fields, models, api
 
 class HRAttendance(models.Model):
     _inherit = 'hr.attendance'
-# Begin New Josh Code
-# class fix_field(models.Model):
 
-#     _name = 'hr.employee'
+     task = fields.Many2one('hr.employee.task', string="Task")
 
-#     _inherit = 'hr.employee'
-
-#     'task': fields.selection('Task')
-#  End new josh Code
-# Original
-#     task = fields.Many2one('hr.employee.task', string="Task")
-
-# New
-      task = fields.Many2one('hr.employee.task', string="Task")
     def add_employee_task(self,task_id, task,emp_id):
         if not task_id and task:
             res = self.env['hr.employee.task'].create({
@@ -84,7 +73,5 @@ class HREmployeeTask(models.Model):
     _rec_name = 'task'
 
     employee_id = fields.Many2one('hr.employee',string="Employee")
-#     Old
-#     task = fields.Char(string="Task")
-# New
-      task = fields.Selection(string="Task")
+    task = fields.Char(string="Task")
+
