@@ -1,10 +1,16 @@
 odoo.define('odoo_attendance_task.my_attendances', function (require) {
 "use strict";
+    //Added next line because why the heck not.  The original .js needed it.
+    var AbstractAction = require('web.AbstractAction');
     var core = require('web.core');
+    
     var Widget = require('web.Widget');
     var QWeb = core.qweb;
+    
     var _t = core._t;
+    
     var hr_attendance = require('hr_attendance.my_attendances');
+    
     var greeting_message = require('hr_attendance.greeting_message');
 
     hr_attendance.include({
@@ -118,7 +124,9 @@ odoo.define('odoo_attendance_task.my_attendances', function (require) {
             // check in/out times displayed in the greeting message template.
             this.attendance.check_in_time = (new Date((new Date(this.attendance.check_in)).valueOf() - (new Date()).getTimezoneOffset()*60*1000)).toTimeString().slice(0,8);
             this.attendance.check_out_time = this.attendance.check_out && (new Date((new Date(this.attendance.check_out)).valueOf() - (new Date()).getTimezoneOffset()*60*1000)).toTimeString().slice(0,8);
-            this.previous_attendance_change_date = action.previous_attendance_change_date;
+            //Changed this as it wasn't calling the action for the clone or matching the error fixes on github. - Josh
+            this.previous_attendance_change_date = action.previous_attendance_change_date && moment.utc(action.previous_attendance_change_date).local();
+            //this.previous_attendance_change_date = action.previous_attendance_change_date;
             this.employee_name = action.employee_name;
         },
     });
