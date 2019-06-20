@@ -4,7 +4,7 @@ from odoo import fields, models, api
 class HRAttendance(models.Model):
     _inherit = 'hr.attendance'
 
-     task = fields.Many2one('hr.employee.task', string="Task")
+    task = fields.Many2one('hr.employee.task', string="Task")
 
     def add_employee_task(self,task_id, task,emp_id):
         if not task_id and task:
@@ -74,4 +74,3 @@ class HREmployeeTask(models.Model):
 
     employee_id = fields.Many2one('hr.employee',string="Employee")
     task = fields.Char(string="Task")
-
