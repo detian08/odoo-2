@@ -3,7 +3,15 @@ from odoo import fields, models, api
 
 class HRAttendance(models.Model):
     _inherit = 'hr.attendance'
+# Begin New Josh Code
+class fix_field(models.Model):
 
+    _name = 'hr.employee'
+
+    _inherit = 'hr.employee'
+
+    'task': fields.selection('Task')
+#  End new josh Code
     task = fields.Many2one('hr.employee.task', string="Task")
 
     def add_employee_task(self,task_id, task,emp_id):
