@@ -16,7 +16,7 @@ class HRAttendance(models.Model):
 #     task = fields.Many2one('hr.employee.task', string="Task")
 
 # New
-      task = fields.Selection('hr.employee.task', string="Task")
+      task = fields.Many2one('hr.employee.task', string="Task")
     def add_employee_task(self,task_id, task,emp_id):
         if not task_id and task:
             res = self.env['hr.employee.task'].create({
@@ -84,4 +84,7 @@ class HREmployeeTask(models.Model):
     _rec_name = 'task'
 
     employee_id = fields.Many2one('hr.employee',string="Employee")
-    task = fields.Char(string="Task")
+#     Old
+#     task = fields.Char(string="Task")
+# New
+      task = fields.Selection(string="Task")
