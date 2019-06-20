@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="ActionpadWidget">
+        <t t-jquery=".fa.fa-user" t-operation="replace">
+        	<t t-if="! widget.pos.get_client() or ! widget.pos.config.allow_customer_image">
+            	<i class='fa fa-user' />
+            </t>
+            <t t-if="widget.pos.get_client() and widget.pos.config.allow_customer_image">
+            	<div style="float: left;margin-left: -37px;"><img t-attf-src="/web/image/res.partner/#{widget.pos.get_client().id}/image_small" style="width: 50px;height: 45px;"/></div>
+            </t>
+        </t>
+    </t>
+</templates>
