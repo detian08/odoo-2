@@ -13,12 +13,9 @@
 
     <t t-extend="OrderWidget">
         <t t-jquery=".line" t-operation="before">
-        	<t t-if="! widget.pos.get_client() or ! widget.pos.config.allow_customer_image">
-            	<i class='fa fa-user' />
-            </t>
-            <t t-if="widget.pos.get_client() and widget.pos.config.allow_customer_image">
-            	<span>THC Products today (g): <t t-esc="widget.pos.get_client().x_studio_thc_products_today"></t>/28g</span>
-            </t>
+          <t t-if="widget.pos.get_client()">
+          	<span>THC Products today (g): <t t-esc="widget.pos.get_client().x_studio_thc_products_today"></t>/28g</span>
+          </t>
         </t>
     </t>
 </templates>
