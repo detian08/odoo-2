@@ -11,19 +11,26 @@
         </t>
     </t>
 
-    <t t-extend="ClientDetails">
+<!--     <t t-extend="ClientDetails">
         <t t-jquery=".client-details-right" t-operation="append">
-          <div class='client-detail'>
-              <span class='label'>THC Products today (g)</span>
-              <t t-if='partner.x_studio_thc_products_today'>
-                  <span class='detail client-thc_limit'><t t-esc="partner.x_studio_thc_products_today"></t>/28g</span>
-              </t>
-              <t t-if='!partner.x_studio_thc_products_today'>
-                  <span class='detail client-thc_limit empty'>N/A</span>
-              </t>
-          </div>
-          <t t-if="widget.pos.get_client()">
-          </t>
+            <div class='client-detail'>
+                <span class='label'>THC Today (g)</span>
+                <t t-if='partner.x_studio_thc_products_today'>
+                    <span class='detail client-x_studio_thc_products_today'><t t-esc='partner.x_studio_thc_products_today' />/28g</span>
+                </t>
+                <t t-if='!partner.x_studio_thc_products_today'>
+                    <span class='detail client-x_studio_thc_products_today empty'>N/A</span>
+                </t>
+            </div>
+            <div class='client-detail'>
+                <span class='label'>Concentrate Today (g)</span>
+                <t t-if='partner.x_studio_concentrate_today'>
+                    <span class='detail client-x_studio_concentrate_today'><t t-esc='partner.x_studio_concentrate_today' />/8g</span>
+                </t>
+                <t t-if='!partner.x_studio_concentrate_today'>
+                    <span class='detail client-x_studio_concentrate_today empty'>N/A</span>
+                </t>
+            </div> 
         </t>
-    </t>
+    </t> -->
 </templates>
