@@ -12,7 +12,7 @@
     </t>
 
     <t t-extend="ClientDetails">
-        <t t-jquery=".client-details-right" t-operation="preprend">
+        <t t-jquery=".client-details-right" t-operation="append">
           <div class='client-detail'>
               <span class='label'>Barcode</span>
               <t t-if='partner.x_studio_thc_products_today'>
