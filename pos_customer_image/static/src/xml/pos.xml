@@ -11,7 +11,7 @@
         </t>
     </t>
 
-    <t t-extend="ClientDetails">
+<!--     <t t-extend="ClientDetails">
         <t t-jquery=".client-details-right" t-operation="preprend">
           <div class='client-detail'>
               <span class='label'>Barcode</span>
@@ -25,5 +25,5 @@
           <t t-if="widget.pos.get_client()">
           </t>
         </t>
-    </t>
+    </t> -->
 </templates>
