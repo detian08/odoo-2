@@ -14,7 +14,7 @@
     <t t-extend="OrderWidget">
         <t t-jquery=".line" t-operation="before">
           <t t-if="widget.pos.get_client()">
-          	<span>THC Products today (g): <t t-esc="widget.pos.get_client().x_studio_thc_products_today"></t>/28g</span>
+          	<span>THC Products today (g): <t t-esc="partner.x_studio_thc_products_today"></t>/28g</span>
           </t>
         </t>
     </t>
