@@ -11,10 +11,18 @@
         </t>
     </t>
 
-    <t t-extend="OrderWidget">
-        <t t-jquery=".line" t-operation="before">
+    <t t-extend="ClientDetails">
+        <t t-jquery=".client-details-right" t-operation="preprend">
+          <div class='client-detail'>
+              <span class='label'>Barcode</span>
+              <t t-if='partner.x_studio_thc_products_today'>
+                  <span class='detail client-thc_limit'>THC Products today (g): <t t-esc="partner.x_studio_thc_products_today"></t>/28g</span>
+              </t>
+              <t t-if='!partner.x_studio_thc_products_today'>
+                  <span class='detail client-thc_limit empty'>N/A</span>
+              </t>
+          </div>
           <t t-if="widget.pos.get_client()">
-          	<span>THC Products today (g): <t t-esc="partner.x_studio_thc_products_today"></t>/28g</span>
           </t>
         </t>
     </t>
